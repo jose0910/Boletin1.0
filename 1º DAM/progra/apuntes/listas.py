@@ -29,3 +29,7 @@ mensaje = "Hola, Pulab!"
 slicing = mensaje[2:6]
 print(slicing)
 
+
+print(mensaje.count("a"))
+print(mensaje.replace("la", "stia"))
+
