@@ -32,4 +32,9 @@ print(slicing)
 
 print(mensaje.count("a"))
 print(mensaje.replace("la", "stia"))
+print(mensaje.count("la"))
+print(mensaje.find("a", 5, 9))
+
+print(mensaje.join("123456789"))
+
 
