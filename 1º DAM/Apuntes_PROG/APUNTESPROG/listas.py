@@ -4,7 +4,7 @@ abecedario = ["a", "b", "c", "d", "e", "f", "g",
               "v", "w", "x", "y", "z"]
 
 
-
+abecedario.
 print (len(abecedario))
 abecedario.append ('d') #añade d al final
 print(abecedario)
