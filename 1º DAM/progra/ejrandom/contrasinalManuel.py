@@ -29,3 +29,6 @@ while True:
         print("Contrasinal xerado:", xerarContraseña(n))
     else:
         print("⚠️ A lonxitude válida é entre 6 e 12 caracteres.")
+
+
+        print(abs )

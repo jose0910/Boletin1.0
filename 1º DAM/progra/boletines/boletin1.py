@@ -1,66 +1,115 @@
+def potencia():
+    print("Calcularanse potencia de dous números")
+    n1 = input("Ingrese un número enteiro: ")
+    n2 = input("Ingrese otro número enteiro: ")
+
+    for x in range(int(n1), int(n2)):
 
 
-"""
+        print(f"El cuadrado de {x} es {x * x}")
 
-1. Escribir o resultado das seguintes expresións:
-"""
-
-print("hola" , (3==5))
+    print("É todo por agora")
 
 
-"""
-a) ((3 + 2) % 2 - 15) / 2 * 5 =  1,25
-
-b) (6 + (6) / 7) + 35 / 2 -8 * 5 / 4 * 2 = 4.3571
-c) 3 + 6 * 14 % 3 = 3
-d) 8 + 7 * 3 + 4 * 6 /2 % 4 = 29
-e) 27 % 4 +15 / 4 = 6,75
-f) 37 / 42 - 2 = 0,3125
-g) 9 * 2 / 3 * 25 * 3 = 450
-h) (7 * 3 – 4 * 4) * 2 / 4 * 2 = 5
 
 
-2. Cales dos seguintes nomes de variables non son válidos?
-a) Salto- mortal   -  no, lleva guion y espacio
-salto_mortal - Válido
-salto + mortal - no, + es un operador
-2salto - no puede comenzar por un numero
-“salto” - no, las comillas hacen que sean una cadena
+
+potencia()
+#con 3 y 5 nos da los valores de 9 y 16 porque son los cuadrados de 3 y 4
+#con 3 y 3 no nos devuelve ningun valor que que es el mismo numero
+#con 5 y 3 no nos devuelve nada porque 5 es mayor que 3 en todo caso tendriamos que poner
+# ", -1" para que los diera el resultado al reves
+
+print("==============================")
 
 
-b) cantidade total  - no, lleva espacio
-cant_total  - Válido
-cant5 - Válido
-cantidadeTotal - Válido
+def hola():
+    nombre= input("Ingrese su nombre ")
+    print(f"Hola {nombre}")
+hola()
+print("=============================")
+def produto():
+    n1= int(input("ingrese un numero: "))
+    n2= int(input("ingrese un numero: "))
+    resultado= n1 * n2
+    print(f"El produto de {n1} y {n2} es {resultado}")
+produto()
+print("=============================")
+
+def cuadrado():
+    n1= int(input("altura: "))
+    n2= int(input("base: "))
+    area= n1 * n2
+    perimetro= (n1 + n2)*2
+    print(f"la area del cuadrado es: {area}")
+    print(f"el perimetro del cuadrado es: {perimetro}")
+
+cuadrado()
+
+import math  # para usar o número pi
+
+def circulo():
+    print("Cálculo do perímetro e da área dun círculo.")
+    r = float(input("Introduce o radio do círculo: "))
+
+    perimetro = 2 * math.pi * r
+    area = math.pi * r ** 2
+
+    print(f"O perímetro do círculo é: {perimetro:.2f}")
+    print(f"A área do círculo é: {area:.2f}")
+
+circulo()
+
+for i in range(5):
+    a = i + 1
+    print(a)
+    print (i * i)
+print("=============================")
+for i in range(2,6):
+    print(f" 2 elevado a {i} = ")
+    print (i, 2**i)
+print("=============================")
+for d in [3, 1, 4, 1, 5]:
+    print (d,)
+print("=============================")
+for x in range(2, 4 ):
+    print(x)
+
+print("Introduce dos numeros para saber su multiplicacion, suma y resta.")
+n1 = int(input("Ingrese un numero"))
+n2 = int(input("Ingrese otro numero"))
+suma= n1 + n2
+resta= n1 - n2
+multiplicacion= n1 * n2
+if n2 != 0:
+    division= n1 / n2
+else:
+    division= "no se puede dividir entre 0"
+print(f"la suma es: {suma} la resta es: {resta} \nla multiplicacion es: {multiplicacion} \n la division es: {division}")
+
+n = int(input("Ingrese un numero"))
+print(f"la tabla de multiplicar de {n} es: ")
+for x in range(1, 11):
+    multiplicacion = n * x
+    print(multiplicacion)
 
 
-3. Expresar, utilizando operadores aritméticos, as seguintes expresións
-a) (m + n) / n
-b) ((m + n) / p) / ((p - r) / s)
-c) (m + 4) / (p - q)
-d) (c * r * t) / 100
-e) (m + n) / (p + (q / r))
-f) (m / n) * (p + q)
-g) (n * (1 + i)**t * i) / ((1 + i)**t - 1)
+x = input("Ingrese una palabra: ")
 
-4. Avalia as seguintes expresións:
-a) true and true == false  -  False
-b) not false == true  - True
-c) (true and true) or false == true  - True
-d) (false or false) and false != true  - False
-e) (not(true and false)) == false  - False
-f) “12” + “12” == “24”   - False
-g) “34” + “43” == “3443”   - True
+def imprimir_pabla():
+    for x in range(100):
+        print(x)
+        print(" ")
+imprimir_pabla()
 
 
-5. Avaliar as seguintes espresións, tendo en conta que as variables teñen os valores:
-a) i = 1, j = 0, k = 1 i + k <= j – k * 3 and k >= 2    - False
-b) i = 3, j = 2, k = -1 i == 3 or j <= 2 and k > 0   - True
-c) tipo = 10, rede = 7,5 tipo < rede + 1,5   - False
-d) ano = 1993 ano % 400 == 0  -  False
-e) 3 == 2 or 5 > 1 + 1   -  True
-f ) 5 – 2 > 4 and not(0,5 == 1 / 5)  - False
-g) a = 2, b = 5, c = 6, d = 10 a >= b or a >= c and a <d   - False
-h) a = 2, b = 5, c = 6, d = 10 a + b < c and a + c < d or 2 * a < a + b   - True
-i) a = 2, b = 5, c = 6, d = 10 !(a * b < d) and !(a * b < c) or b + c <= d   - True
-"""
+# Pedir unha palabra ao usuario
+palabra = input("Introduce unha palabra: ")
+
+# Repetila 1000 veces con espazos intermedios
+resultado = (palabra + " ") * 1000
+
+# Amosar o resultado
+print(resultado)
+
+

@@ -53,10 +53,26 @@ while True:
     n= int(input("Introduce la longitud do contrasinal. (0 para "))
     if n >= 6 and n <=12:
         print(xeradorContrasinais(n))
+    if i > 0 and i > 
     elif n == 0:
         break
     else:
         print("A lonxitude válida e entre 6 y 12")
 
+print(contraseña.upper())
+
+t = (1,2,,3,4,5,6,,7,8,9)
+
+if (len(t) == 6):
+    print(xerarContrasinais(t))
+    
+l =[1,2,3,4,5,6,7,8,9]
+if (len(l) == 6):
+
+    
 
 '''
+
+
+
+contrasinal = '123457685432576'
