@@ -11,8 +11,12 @@ def comprobarContrasinal(contrasinal):
 
     si= True
     no= False
+    caracter = "!@#%&*_"
     for caracter in contrasinal:
-        caracter = ["!", "@", "#", "%", "&", "*", "_"]
+        for simbolo in caracter:
+
+            if caracter == simbolo:
+
         print("Si ten un caracter especial")
     else:
         print(si)
